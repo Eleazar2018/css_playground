@@ -8,10 +8,14 @@
     border-style: dotted;
     border-color: gray;}*/
 
+h1 {
+    color: blue
+}
+
 h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    text-align: center;
+    text-align: right;
     border: 3px solid blue;
     width: 50%;
 }
@@ -51,6 +55,13 @@ ol {
 
 /*explicando cascade e especificidade*/
 
+.titulo.titulo-pagina {
+    color: purple;
+}
+
+
+/*esta classe é mais especifica do que as posteriores*/
+
 .titulo-pagina {
     font-size: 5rem;
     color: red;
@@ -64,4 +75,26 @@ ol {
 }
 
 
+/*1 - 0 - 0 */
+
+#titulo-principal {
+    color: aquamarine;
+}
+
+
 /*esta propriedade terá prioridade sobre a anterior*/
+
+
+/*Regra de especificidade
+0 - 2 - 0 
+0 - titulo.titulo-pagina - 
+
+0 - 1 - 0
+0 - .pagina - 0
+0 - .titulo-pagina - 0
+
+0 - 0 - 1
+0 - 0 - h1
+
+se empatar vence quem está mais abaixo!
+*/
