@@ -1,4 +1,4 @@
-h1 {
+/*h1 {
     color: #a200ff;
     font-size: 3rem;
     width: 50%;
@@ -6,8 +6,7 @@ h1 {
     border: 9px dotted gray;
     /*border-width:9px;
     border-style: dotted;
-    border-color: gray;*/
-}
+    border-color: gray;}*/
 
 h2 {
     font-family: 'Montserrat', sans-serif;
@@ -48,3 +47,21 @@ ol {
 #titulo-principal {
     margin-left: 7rem;
 }
+
+
+/*explicando cascade e especificidade*/
+
+.titulo-pagina {
+    font-size: 5rem;
+    color: red;
+    border: 5px solid red;
+}
+
+.titulo {
+    font-size: 3rem;
+    color: green;
+    border-style: dashed;
+}
+
+
+/*esta propriedade terá prioridade sobre a anterior*/
