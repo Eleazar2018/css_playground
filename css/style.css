@@ -1,4 +1,4 @@
-/*h1 {
+    /*h1 {
     color: #a200ff;
     font-size: 3rem;
     width: 50%;
@@ -7,81 +7,71 @@
     /*border-width:9px;
     border-style: dotted;
     border-color: gray;}*/
-
-h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    text-align: right;
-    border: 3px solid blue;
-    width: 50%;
-}
-
-p {
-    background-color: black;
-    color: #ffffff;
-}
-
-span {
-    font-size: 40px;
-    font-family: "comic sans MS";
-    color: yellow;
-    text-decoration: underline;
-    text-transform: uppercase;
-}
-
-ul {
-    font-size: 50px;
-    list-style: none;
-}
-
-ol {
-    font-size: 50x;
-    list-style: lower-roman;
-    margin-left: 40px;
-}
-
-.conteudo {
-    margin-left: 2rem;
-}
-
-#titulo-principal {
-    margin-left: 7rem;
-}
-
-
-/*explicando cascade e especificidade*/
-
-.titulo.titulo-pagina {
-    color: purple;
-}
-
-
-/*esta classe é mais especifica do que as posteriores*/
-
-.titulo-pagina {
-    font-size: 5rem;
-    color: red;
-    border: 5px solid red;
-}
-
-.titulo {
-    font-size: 3rem;
-    color: green;
-    border-style: dashed;
-}
-
-
-/*1 - 0 - 0 */
-
-#titulo-principal {
-    color: aquamarine;
-}
-
-
-/*esta propriedade terá prioridade sobre a anterior*/
-
-
-/*Regra de especificidade
+    
+    h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        text-align: right;
+        border: 3px solid blue;
+        width: 50%;
+    }
+    
+    p {
+        background-color: black;
+        color: #ffffff;
+    }
+    
+    span {
+        font-size: 40px;
+        font-family: "comic sans MS";
+        color: yellow;
+        text-decoration: underline;
+        text-transform: uppercase;
+    }
+    
+    ul {
+        font-size: 50px;
+        list-style: none;
+    }
+    
+    ol {
+        font-size: 50x;
+        list-style: lower-roman;
+        margin-left: 40px;
+    }
+    
+    .conteudo {
+        margin-left: 2rem;
+    }
+    
+    #titulo-principal {
+        margin-left: 7rem;
+    }
+    /*explicando cascade e especificidade*/
+    
+    .titulo.titulo-pagina {
+        color: purple;
+    }
+    /*esta classe é mais especifica do que as posteriores*/
+    
+    .titulo-pagina {
+        font-size: 5rem;
+        color: red;
+        border: 5px solid red;
+    }
+    
+    .titulo {
+        font-size: 3rem;
+        color: green;
+        border-style: dashed;
+    }
+    /*1 - 0 - 0 */
+    
+    #titulo-principal {
+        color: aquamarine;
+    }
+    /*esta propriedade terá prioridade sobre a anterior*/
+    /*Regra de especificidade
 0 - 2 - 0 
 0 - titulo.titulo-pagina - 
 
@@ -94,105 +84,124 @@ ol {
 
 se empatar vence quem está mais abaixo!
 */
-
-h1 {
-    color: blue;
-}
-
-.titulo-generico {
-    font-size: 40px;
-    color: red;
-}
-
-
-/* E F seletor descendente
+    
+    h1 {
+        color: blue;
+    }
+    
+    .titulo-generico {
+        font-size: 40px;
+        color: red;
+    }
+    /* E F seletor descendente
 
 .container-exemplo .primeiro-nivel .titulo-generico {
     font-size: 80px;
     color: black;
 }
 */
-
-
-/*seletordescendente imediato combinado (E > F)*/
-
-.container-exemplo>.primeiro-nivel .titulo-generico {
-    font-size: 80px;
-    color: black;
-}
-
-
-/*com :são os pseudo-seletores*/
-
-.meu-link {
-    font-size: 50px;
-    text-decoration: none;
-}
-
-.meu-link2:hover {
-    text-decoration: underline;
-    background-color: black;
-}
-
-.meu-link3:link {
-    color: green;
-}
-
-.meu-link3:visited {
-    color: red;
-}
-
-
-/* pseudo classe active fica ativa ao clicar
+    /*seletordescendente imediato combinado (E > F)*/
+    
+    .container-exemplo>.primeiro-nivel .titulo-generico {
+        font-size: 80px;
+        color: black;
+    }
+    /*com :são os pseudo-seletores*/
+    
+    .meu-link {
+        font-size: 50px;
+        text-decoration: none;
+    }
+    
+    .meu-link2:hover {
+        text-decoration: underline;
+        background-color: black;
+    }
+    
+    .meu-link3:link {
+        color: green;
+    }
+    
+    .meu-link3:visited {
+        color: red;
+    }
+    /* pseudo classe active fica ativa ao clicar
 .meu-link:active {
     font-size: 60px;
     color: red;
 }
 */
-
-.meu-link:focus {
-    font-size: 90px;
-    color: black;
-}
-
-
-/*atributo tipo number*/
-
-.meu-input[type="number"] {
-    background-color: red;
-    font-size: 70px;
-}
-
-.meu-input:focus {
-    background-color: white;
-    color: black;
-}
-
-.nav-menu {
-    border: 2px solid blue;
-}
-
-.menu-item {
-    border: 2px dashed purple;
-    background-color: grey;
-    margin-bottom: 20px;
-}
-
-.menu-item:last-child {
-    margin-bottom: 0px;
-}
-
-.menu-item:first-child {
-    color: red;
-}
-
-.menu-item:nth-child(3) {
-    background-color: green;
-}
-
-.menu-item:nth-child(n+3) {
-    border: 5px solid red;
-}
-
-
-/*seletores de atributo*/
+    
+    .meu-link:focus {
+        font-size: 90px;
+        color: black;
+    }
+    /*atributo tipo number*/
+    
+    .meu-input[type="number"] {
+        background-color: red;
+        font-size: 70px;
+    }
+    
+    .meu-input:focus {
+        background-color: white;
+        color: black;
+    }
+    
+    .nav-menu {
+        border: 2px solid blue;
+    }
+    
+    .menu-item {
+        border: 2px dashed purple;
+        background-color: grey;
+        margin-bottom: 20px;
+        display: inline-block;
+        min-width: 200px;
+    }
+    
+    .menu-item:last-child {
+        margin-bottom: 0px;
+    }
+    
+    .menu-item:first-child {
+        color: red;
+    }
+    
+    .menu-item:nth-child(3) {
+        background-color: green;
+    }
+    
+    .menu-item:nth-child(n+3) {
+        border: 5px solid red;
+    }
+    /*seletores de atributo*/
+    
+    .bloco-inicial {
+        font-size: 50px;
+        background-color: yellow;
+        display: inline;
+        /*espaço que o conteudo exige*/
+        margin-bottom: 20px;
+        /*ocupam todo o espaço disponivel. podemos usar as propriedades : Width, height, */
+        width: 500px;
+    }
+    
+    .bloco-inicial-abaixo {
+        font-size: 50px;
+        background-color: red;
+    }
+    
+    .span-inicial {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 40px;
+        color: red;
+        text-decoration: underline;
+        text-transform: uppercase;
+        display: inline;
+        /*por padrão inline ignora wudth e height. Só aceita propriedades na horizontal e não na vertical*/
+    }
+    
+    .bloco-escondido {
+        /*display: none;*/
+    }
