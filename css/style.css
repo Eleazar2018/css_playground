@@ -8,10 +8,6 @@
     border-style: dotted;
     border-color: gray;}*/
 
-h1 {
-    color: blue
-}
-
 h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
@@ -98,3 +94,105 @@ ol {
 
 se empatar vence quem está mais abaixo!
 */
+
+h1 {
+    color: blue;
+}
+
+.titulo-generico {
+    font-size: 40px;
+    color: red;
+}
+
+
+/* E F seletor descendente
+
+.container-exemplo .primeiro-nivel .titulo-generico {
+    font-size: 80px;
+    color: black;
+}
+*/
+
+
+/*seletordescendente imediato combinado (E > F)*/
+
+.container-exemplo>.primeiro-nivel .titulo-generico {
+    font-size: 80px;
+    color: black;
+}
+
+
+/*com :são os pseudo-seletores*/
+
+.meu-link {
+    font-size: 50px;
+    text-decoration: none;
+}
+
+.meu-link2:hover {
+    text-decoration: underline;
+    background-color: black;
+}
+
+.meu-link3:link {
+    color: green;
+}
+
+.meu-link3:visited {
+    color: red;
+}
+
+
+/* pseudo classe active fica ativa ao clicar
+.meu-link:active {
+    font-size: 60px;
+    color: red;
+}
+*/
+
+.meu-link:focus {
+    font-size: 90px;
+    color: black;
+}
+
+
+/*atributo tipo number*/
+
+.meu-input[type="number"] {
+    background-color: red;
+    font-size: 70px;
+}
+
+.meu-input:focus {
+    background-color: white;
+    color: black;
+}
+
+.nav-menu {
+    border: 2px solid blue;
+}
+
+.menu-item {
+    border: 2px dashed purple;
+    background-color: grey;
+    margin-bottom: 20px;
+}
+
+.menu-item:last-child {
+    margin-bottom: 0px;
+}
+
+.menu-item:first-child {
+    color: red;
+}
+
+.menu-item:nth-child(3) {
+    background-color: green;
+}
+
+.menu-item:nth-child(n+3) {
+    border: 5px solid red;
+}
+
+
+/*seletores de atributo*/
