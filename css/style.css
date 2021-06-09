@@ -12,19 +12,22 @@
     /*border-width:9px;
     border-style: dotted;
     border-color: gray;}*/
+    body{
+        margin:0;
+    }
     
-    h2 {
+    /*h2 {
         font-family: 'Montserrat', sans-serif;
         font-weight: bold;
         text-align: right;
         border: 3px solid blue;
         width: 50%;
-    }
+    }*/
     
-    p {
+    /*p {
         background-color: black;
         color: #ffffff;
-    }
+    }*/
     
     span {
         font-size: 40px;
@@ -227,3 +230,93 @@ se empatar vence quem está mais abaixo!
         border-top: 10px solid green; 
         border-bottom: 10px dashed black;
     }
+    .wrapper{
+        /*este elemento é por padrão display-blok*/
+        display: block;
+        background-color: #768076;
+        font-size: 1.5rem;
+        width: 40rem;
+        margin: 0px auto;
+
+    }
+    .wrapper p{
+        margin-top: 0;
+        margin-left: 20px;
+    }
+    .wrapper .imagem-principal{
+        float: left;
+        border: 6px solid magenta;
+        /*padding: 10px;aparecerá dentro da moldura da borda*/
+        /*margin-right: 10px;
+        margin-bottom: 5px;*/
+        margin: 10px 20px 10px 10px;
+    }
+    .wrapper .paragrafo-clear{
+       /*clear:both;*/
+    }
+    .wrapper .imagem-direita{
+        float:right;
+        border: 6px solid magenta;
+        margin: 10px 20px 10px 10px;
+    }
+    .wrapper::after{
+        content:'';/*vazio*/
+        display: table;/* ou block*/
+        clear:both;/*limpa*/
+    }
+
+    .wrapper-2{
+        background-color: yellow;
+        font-size: 1.5rem;
+        width: 50rem;
+        margin: 20px auto;
+
+    }
+    .box-1{
+        height: 200px;
+        width: 33%;
+    }
+    .red{
+        background-color: red;
+        float: right;
+    }
+    .blue{background-color: blue;
+        float: right;
+        /*margin-left: 30px;*/
+    }
+    .green{
+        background-color: green;
+        float: right;
+    }
+    .wrapper-3{
+        background-color: rgb(199, 199, 16) ;
+        font-size: 1.5rem;
+        width: 56rem;
+        margin: 20px auto;
+    }
+    .wrapper-3::after{
+        content:'';/*vazio*/
+        display: table;/* ou block*/
+        clear:both;/*limpa*/
+    }
+    .servico{
+        width: 30%;
+        border: 1px solid blue;      
+        float:left;
+        min-height: 200px;
+        margin: 0 1%;
+        
+    }
+.wrapper-4 {
+    border: 2px solid blue;
+    padding: 40px;
+    margin-top: 40px;
+    position: relative;
+}
+.filho {
+    position: fixed;
+    background-color: red;
+    padding: 20px;
+    top: 50px;
+    left: 20px;
+}
