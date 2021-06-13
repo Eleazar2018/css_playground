@@ -320,3 +320,31 @@ se empatar vence quem está mais abaixo!
     top: 50px;
     left: 20px;
 }
+@media(max-width:1200px){
+    body{
+        background-color: red;
+    }
+}
+@media(max-width:1024px){
+    body{
+        background-color: green;
+    }
+}
+
+@media(max-width:760px){
+    body{
+        background-color: blue;
+    }
+    .resizable-image{
+        display: none;
+    }
+    .servico{
+        width: 100%;
+    }
+}
+
+@media(max-width:480px){
+    body{
+        background-color: yellow;
+    }
+}
